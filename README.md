@@ -19,12 +19,16 @@ docker-compose up --build
 http://localhost:8000/docs
 
 ## Эндпоинты
-- Метод	        URL	                       Описание
-- POST	    departments/	              Создать подразделение
-- GET	      departments/{id}	          Получить подразделение с деревом
-- PATCH	    departments/{id}	          Обновить; переместить
-- DELETE	  departments/{id}	          Удалить (cascade ; reassign)
-- POST	    departments/{id}/employees/	Создать сотрудник
+
+**POST** `/departments/` — Создать подразделение
+
+**GET** `/departments/{id}` — Получить подразделение с деревом
+
+**PATCH** `/departments/{id}` — Обновить / переместить
+
+**DELETE** `/departments/{id}` — Удалить (cascade / reassign)
+
+**POST** `/departments/{id}/employees/` — Создать сотрудника
 
 ## Тесты
 cd org-structure-api
