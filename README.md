@@ -11,20 +11,20 @@ API для управления организационной компании
 - Pytest (тесты)
 
 ## Быстрый старт bash
-git clone https://github.com/твой-логин/org-structure-api.git
-cd org-structure-api
+git clone https://github.com/твой-логин/org-structure-api.git;
+cd org-structure-api;
 docker-compose up --build
 
 ## Документация
 http://localhost:8000/docs
 
 ## Эндпоинты
-Метод	        URL	                       Описание
-POST	    departments/	              Создать подразделение
-GET	      departments/{id}	          Получить подразделение с деревом
-PATCH	    departments/{id}	          Обновить; переместить
-DELETE	  departments/{id}	          Удалить (cascade ; reassign)
-POST	    departments/{id}/employees/	Создать сотрудник
+- Метод	        URL	                       Описание
+- POST	    departments/	              Создать подразделение
+- GET	      departments/{id}	          Получить подразделение с деревом
+- PATCH	    departments/{id}	          Обновить; переместить
+- DELETE	  departments/{id}	          Удалить (cascade ; reassign)
+- POST	    departments/{id}/employees/	Создать сотрудник
 
 ## Тесты
 cd org-structure-api
